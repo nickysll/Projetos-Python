@@ -1,0 +1,24 @@
+print("Hello World! \nBoas Vindas a calculadora em Python\nSelecione uma das opções abaixo:")
+
+print("1 - Soma \n2 - Multiplicação \n3 - Divisão \n4 - Subtração")
+sinal = int(input("Opção desejada:"))
+if sinal <= 0 or sinal > 5: 
+    print("Opção não encontrada, tente novamente.")
+print("Digite o primeiro valor")
+primeiro_valor = int(input("Primeiro valor:"))
+print("Digite o segundo valor")
+segundo_valor = int(input("Segundo valor:"))
+if sinal == 1:
+    print(primeiro_valor + segundo_valor)
+
+elif sinal == 2:
+    print(primeiro_valor * segundo_valor)
+
+elif sinal == 3:
+    print(primeiro_valor / segundo_valor)
+
+elif sinal == 4:
+    print(primeiro_valor - segundo_valor)
+    
+else:
+    print("Não foi possível realizar o cálculo")
